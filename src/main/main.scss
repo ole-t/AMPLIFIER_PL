@@ -1,0 +1,256 @@
+@import "../colorStyles.scss";
+
+main {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    top: 10px;
+    bottom: 50px;
+    left: 10px;
+    right: 10px;
+
+    button {
+        user-select: none;
+        display: block;
+        min-width: 20px;
+        height: 24px;
+        background-color: $_btnColor_01;
+        color: $_btnColor_02;
+        border: none;
+        border-radius: 12px;
+        padding: 4px 20px 4px 20px;
+        margin: 5px;
+        cursor: pointer;
+
+        &:hover {
+            background: darken($color: lightgray, $amount: 10%);
+        }
+    }
+
+    .visibleNameForm {
+        font-weight: 600;
+        font-size: 16px;
+        margin-top: 10px;
+    }
+
+    .mFormContenner {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin: 2px;
+        padding: 2px;
+        background-color: $_colorStyle01_fone02;
+        border: solid 1px $_colorStyle01_border01;
+        width: 500px;
+        max-width: 500px;
+
+        .contennerForInputFields {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            //height: 100%;
+
+            .inputComplect {
+                display: flex;
+                flex-direction: row;
+                flex-wrap: nowrap;
+                margin: 5px;
+                margin-top: 14px;
+
+                .labelBeforeInputField {
+                    margin-right: 10px;
+                    width: 160px;
+                    min-width: 100px;
+                }
+
+                .contennerParaSubinput {
+                    display: flex;
+                    flex-direction: column;
+                    flex-wrap: nowrap;
+
+                    input {
+                        width: 190px;
+                        padding: 4px;
+                    }
+                    // delete defoult vectors
+                    input[type="number"]::-webkit-outer-spin-button,
+                    input[type="number"]::-webkit-inner-spin-button {
+                        -webkit-appearance: none; // Yeah, yeah everybody write about it
+                    }
+                    input[type="number"],
+                    input[type="number"]:hover,
+                    input[type="number"]:focus {
+                        appearance: none;
+                        //-moz-appearance: textfield;
+                        border: none;
+                        outline: none;
+                    }
+
+                    .alertNoteUfterField {
+                        font-size: 12px;
+                        height: 1em;
+                        //width: 80px;
+                        color: red;
+                        margin: 0;
+                        margin-left: 5px;
+                        padding: 0;
+                    }
+                }
+            }
+        }
+
+        .contennerForBtn {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            align-items: center;
+
+            .mBtnUser {
+                background-color: $_btnColor_02;
+                color: $_btnColor_01;
+                border: solid 1px $_btnColor_01;
+
+                &:hover {
+                    background: darken($color: lightgray, $amount: 10%);
+                }
+            }
+        }
+    }
+
+    .formAnsverFromServer {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: start;
+        margin: 2px;
+        border: solid 1px $_colorStyle01_border01;
+
+        * {
+            margin: 2px;
+        }
+
+        output {
+            color: red;
+        }
+
+        textarea {
+            border: none;
+            outline: none;
+            background-color: rgb(235, 233, 233);
+            width: 500px;
+            height: 80px;            
+            resize: none;
+            overflow-x: hidden;
+            overflow-y: auto;
+            border: solid 1px $_colorStyle01_border01;
+            background-color: $_colorStyle01_fone02;
+        }
+    }
+
+    .mainBottom {
+        overflow: auto;
+        height: 100%;
+        margin-bottom: 10px;
+        border: solid 1px $_colorStyle01_border01;
+
+        table {
+            border-collapse: collapse; // слияние внутр границ
+            //width: 50%;
+            min-height: 40px;
+            border-top: none;
+            outline: auto;
+
+            thead {
+                position: sticky;
+                top: 0;
+                tr {
+                    th {
+                        font-weight: normal;
+                        color: $_colorStyle01_font03;
+                        background-color: $_colorStyle01_fone03;
+                        border: solid 1px $_colorStyle01_border01;
+                        border-top: none;
+                        border-bottom: none;
+                        margin: 0;
+                        padding-top: 2px;
+                        padding-bottom: 2px;
+                        padding-left: 4px;
+                        padding-right: 4px;
+                        height: 22px;
+                        max-height: 22px;
+                        white-space: wrap;
+
+                        width: 50px;
+                        //min-width: 20px;
+                        //max-width: 100px;
+                    }
+                }
+            }
+
+            tbody {
+                tr {
+                    max-height: 22px;
+                    td {
+                        box-sizing: border-box;
+                        border: solid 1px $_colorStyle01_border01;
+                        margin: 0;
+                        padding-top: 2px;
+                        padding-bottom: 2px;
+                        padding-left: 4px;
+                        padding-right: 4px;
+                        height: 22px;
+                        max-height: 22px;
+                        white-space: nowrap;
+                    }
+                }
+            }
+
+            .delBtn {
+                margin: 0;
+                padding: 0;
+                margin-left: 10px;
+                margin-right: 10px;
+                border: none;
+                background-color: unset;
+                color: red;
+            }
+        }
+    }
+}
+
+.universalDialogForm {
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba($color: #000000, $alpha: 0.8);
+    margin: 10px;
+    padding: 10px;
+    width: 100%;
+    height: 100%;
+    z-index: 5;
+    margin: 0;
+    padding: 10px;
+
+    .sub_DialogForm {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        background-color: gainsboro;
+        border: solid 2px $_colorStyle01_border01;
+        width: 400px;
+        height: 150px;
+        font-size: 30px;
+    }
+}
+
+.mDisplayNone {
+    display: none;
+}

@@ -1,0 +1,295 @@
+main {
+  position: fixed;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  top: 10px;
+  bottom: 50px;
+  left: 10px;
+  right: 10px;
+}
+main button {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  display: block;
+  min-width: 20px;
+  height: 24px;
+  background-color: rgb(92, 92, 60);
+  color: white;
+  border: none;
+  border-radius: 12px;
+  padding: 4px 20px 4px 20px;
+  margin: 5px;
+  cursor: pointer;
+}
+main button:hover {
+  background: #bababa;
+}
+main .visibleNameForm {
+  font-weight: 600;
+  font-size: 16px;
+  margin-top: 10px;
+}
+main .mFormContenner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 2px;
+  padding: 2px;
+  background-color: rgb(235, 233, 233);
+  border: solid 1px rgb(105, 105, 105);
+  width: 500px;
+  max-width: 500px;
+}
+main .mFormContenner .contennerForInputFields {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+}
+main .mFormContenner .contennerForInputFields .inputComplect {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  margin: 5px;
+  margin-top: 14px;
+}
+main .mFormContenner .contennerForInputFields .inputComplect .labelBeforeInputField {
+  margin-right: 10px;
+  width: 160px;
+  min-width: 100px;
+}
+main .mFormContenner .contennerForInputFields .inputComplect .contennerParaSubinput {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+}
+main .mFormContenner .contennerForInputFields .inputComplect .contennerParaSubinput input {
+  width: 190px;
+  padding: 4px;
+}
+main .mFormContenner .contennerForInputFields .inputComplect .contennerParaSubinput input[type=number]::-webkit-outer-spin-button,
+main .mFormContenner .contennerForInputFields .inputComplect .contennerParaSubinput input[type=number]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+main .mFormContenner .contennerForInputFields .inputComplect .contennerParaSubinput input[type=number],
+main .mFormContenner .contennerForInputFields .inputComplect .contennerParaSubinput input[type=number]:hover,
+main .mFormContenner .contennerForInputFields .inputComplect .contennerParaSubinput input[type=number]:focus {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  border: none;
+  outline: none;
+}
+main .mFormContenner .contennerForInputFields .inputComplect .contennerParaSubinput .alertNoteUfterField {
+  font-size: 12px;
+  height: 1em;
+  color: red;
+  margin: 0;
+  margin-left: 5px;
+  padding: 0;
+}
+main .mFormContenner .contennerForBtn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+main .mFormContenner .contennerForBtn .mBtnUser {
+  background-color: white;
+  color: rgb(92, 92, 60);
+  border: solid 1px rgb(92, 92, 60);
+}
+main .mFormContenner .contennerForBtn .mBtnUser:hover {
+  background: #bababa;
+}
+main .formAnsverFromServer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+  margin: 2px;
+  border: solid 1px rgb(105, 105, 105);
+}
+main .formAnsverFromServer * {
+  margin: 2px;
+}
+main .formAnsverFromServer output {
+  color: red;
+}
+main .formAnsverFromServer textarea {
+  border: none;
+  outline: none;
+  background-color: rgb(235, 233, 233);
+  width: 500px;
+  height: 80px;
+  resize: none;
+  overflow-x: hidden;
+  overflow-y: auto;
+  border: solid 1px rgb(105, 105, 105);
+  background-color: rgb(235, 233, 233);
+}
+main .mainBottom {
+  overflow: auto;
+  height: 100%;
+  margin-bottom: 10px;
+  border: solid 1px rgb(105, 105, 105);
+}
+main .mainBottom table {
+  border-collapse: collapse;
+  min-height: 40px;
+  border-top: none;
+  outline: auto;
+}
+main .mainBottom table thead {
+  position: sticky;
+  top: 0;
+}
+main .mainBottom table thead tr th {
+  font-weight: normal;
+  color: white;
+  background-color: rgb(114, 113, 113);
+  border: solid 1px rgb(105, 105, 105);
+  border-top: none;
+  border-bottom: none;
+  margin: 0;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  padding-left: 4px;
+  padding-right: 4px;
+  height: 22px;
+  max-height: 22px;
+  white-space: wrap;
+  width: 50px;
+}
+main .mainBottom table tbody tr {
+  max-height: 22px;
+}
+main .mainBottom table tbody tr td {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border: solid 1px rgb(105, 105, 105);
+  margin: 0;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  padding-left: 4px;
+  padding-right: 4px;
+  height: 22px;
+  max-height: 22px;
+  white-space: nowrap;
+}
+main .mainBottom table .delBtn {
+  margin: 0;
+  padding: 0;
+  margin-left: 10px;
+  margin-right: 10px;
+  border: none;
+  background-color: unset;
+  color: red;
+}
+
+.universalDialogForm {
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: rgba(0, 0, 0, 0.8);
+  margin: 10px;
+  padding: 10px;
+  width: 100%;
+  height: 100%;
+  z-index: 5;
+  margin: 0;
+  padding: 10px;
+}
+.universalDialogForm .sub_DialogForm {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: gainsboro;
+  border: solid 2px rgb(105, 105, 105);
+  width: 400px;
+  height: 150px;
+  font-size: 30px;
+}
+
+.mDisplayNone {
+  display: none;
+}
